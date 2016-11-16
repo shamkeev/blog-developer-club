@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-light bg-faded">
+  <div class="container">
+    <%= link_to "Developers-Club Blog", posts_path, class: "navbar-brand"%>
+  </div>
 
-<%= yield %>
+</nav>
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>
